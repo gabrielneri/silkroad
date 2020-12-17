@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Silk Road | Fármacia</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src='./img/logo.png'/></a>
+            </div>
+            <div class="search-box">
+                <input id="search-inputText" type="text" name="" placeholder="Seja bem-vindo, o que você busca?" required="" data-invalid="" aria-invalid="true">
+                <a class="search-btn" href="#">
+                </a>
+            </div>
+            <a href="#" class="cadastro">
+                <div class="img-cadastro">
+                    <img src='./img/add.png'/>
+                </div>
+                <div class="text-cadastro">
+                    <strong>
+                        Cadastrar <br> Produto/Categoria
+                    </strong>
+                </div>
+            </a>
+            <a href="#" class="pedidos">
+                <div class="img-pedidos">
+                    <img src='./img/pedidos.png'/>
+                </div>
+                <div class="text-pedidos">
+                    <strong>
+                        Pedidos
+                    </strong>
+                </div>
+            </a>
+            <div class="new-prod">
+                <form class="new-prod-content" id="prod-form" action="#" method="post">
+                    <h2>Novo Produto</h2>
+                    <div class="new-prod-modal">
+                        <label for="name"><b>Nome</b></label>
+                        <input type="text" placeholder="Digite o nome" name="name" required>
+                        <label for="categoria"><b>Categoria</b></label>
+                        <select id="categoria" form="prod-form">
+                            <option value="pressaoalta">Pressao Alta</option>
+                            <option value="dorc">Dor de Cabeça</option>
+                            <option value="Diabetes">Diabetes</option>
+                            <option value="dorp">Dores no Corpo</option>
+                          </select>
+                        <label for="preco"><b>Preço</b></label>
+                        <input type="number" placeholder="Digite o preço" name="preco" required>
+                        <label for="estoque"><b>Estoque</b></label>
+                        <input type="number" placeholder="Digite o estoque" name="estoque" required>
+                        <label for="disponivel"><b>Disponível:</b></label>
+                        <input type="radio" id="yes" name="disponivel">
+                        <label for="yes">Sim</label>
+                        <input type="radio" id="no" name="disponivel">
+                        <label for="no">Não</label>
+                        <button class="mybtn" type="submit">Criar</button>
+                        <span class="new-prod-close">X</span>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <!-- Main -->
+        <main>
+            <div class="product">
+                <div class="p-box">
+                    <a href="produto.html">
+                        <img src="./img/produto01.png" alt=""/>
+                        <p>Loratadina 10mg 12 Comprimidos</p>
+                    </a>
+                    <a href="#" class="price">R$ 30,00</a>
+                    <a href="#" class="edit-btn">Editar Produto</a>
+                </div>
+                <div class="p-box">
+                    <a href="produto.html">
+                        <img src="./img/produto01.png" alt=""/>
+                        <p>Loratadina 10mg 12 Comprimidos</p>
+                    </a>
+                    <a href="#" class="price">R$ 30,00</a>
+                    <a href="#" class="edit-btn">Editar Produto</a>
+                </div>
+                <div class="p-box">
+                    <a href="produto.html">
+                        <img src="./img/produto01.png" alt=""/>
+                        <p>Loratadina 10mg 12 Comprimidos</p>
+                    </a>
+                    <a href="#" class="price">R$ 30,00</a>
+                    <a href="#" class="edit-btn">Editar Produto</a>
+                </div>
+                <div class="p-box">
+                    <a href="produto.html">
+                        <img src="./img/produto01.png" alt=""/>
+                        <p>Loratadina 10mg 12 Comprimidos</p>
+                    </a>
+                    <a href="#" class="price">R$ 30,00</a>
+                    <a href="#" class="edit-btn">Editar Produto</a>
+                </div>
+                <div class="p-box">
+                    <a href="produto.html">
+                        <img src="./img/produto01.png" alt=""/>
+                        <p>Loratadina 10mg 12 Comprimidos</p>
+                    </a>
+                    <a href="#" class="price">R$ 30,00</a>
+                    <a href="#" class="edit-btn">Editar Produto</a>
+                </div>
+                <div class="p-box">
+                    <a href="produto.html">
+                        <img src="./img/produto01.png" alt=""/>
+                        <p>Loratadina 10mg 12 Comprimidos</p>
+                    </a>
+                    <a href="#" class="price">R$ 30,00</a>
+                    <a href="#" class="edit-btn">Editar Produto</a>
+                </div>
+            </div>
+        </main>
+        <!-- Barra Lateral -->
+        <aside>
+            <div class="barra-lateral">
+                <div class="titulo">
+                    <span><img src='./img/abc.png'/><h1 style='display:inline;'>Medicamentos</h1></span>    
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">PRESSÃO ALTA</a>
+                    </li>
+                    <a href="#" class="btn-img"><img src="./img/edit.png" class="imgedit"></a>
+                    <li>
+                        <a href="#">DOR DE CABEÇA</a>
+                    </li>
+                    <a href="#" class="btn-img"><img src="./img/edit.png" class="imgedit"></a>
+                    <li>
+                        <a href="#">DORES NO CORPO</a>
+                    </li>
+                    <a href="#" class="btn-img"><img src="./img/edit.png" class="imgedit"></a>
+                    <li>
+                        <a href="#">DIABETES</a>
+                    </li>
+                    <a href="#" class="btn-img"><img src="./img/edit.png" class="imgedit"></a>
+                </ul>    
+            </div>
+        </aside>
+        <!-- Footer -->
+        <footer>
+            <div class="footer" id="f">
+                <div class="footer-container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Quem Somos</h3>
+                            <p>Fundada em 2020, a Silk Road é um e-commerce de medicamentos farmacêuticos
+                            que está em crescente evolução. A empresa é considerada uma dos mais influentes
+                            e-commerces do ramo. 
+                            </p>
+                        </div>
+                        <div class="footer-col-2">
+                            <h3>Métodos de Pagamento</h3>
+                            <img src="./img/metodos-pagamento.png">
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Links Úteis</h3>
+                            <ul>
+                                <li>Entar em Contato</li>
+                                <li>Fornecedores</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>Redes Sociais</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="admin.js"></script>
+    </div>
+</body>
+</html>

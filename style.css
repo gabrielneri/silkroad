@@ -249,7 +249,7 @@ img.avatar {
     font-size: 1.2rem;
 }
 
-.buy-btn {
+.buy-btn, .edit-btn {
     position: absolute;
     text-align: center;
     width: 190px;
@@ -510,5 +510,129 @@ td:last-child {
 th:last-child {
     text-align: right;
 }
-
 /* Carrinho de Compras - end */
+
+/* Admin User - start */
+
+.img-cadastro {
+    float: left;
+    padding-left: 15px;
+    padding-top: 45px;
+}
+
+.img-cadastro img, .img-pedidos img {
+    width: 50px;
+    height: 50px;
+}
+
+.text-cadastro {
+    float: left;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 55px;
+    color: #006400;
+}
+
+.img-pedidos {
+    float: left;
+    padding-left: 20px;
+    padding-top: 45px;
+}
+
+.text-pedidos {
+    float: left;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 65px;
+    color: #006400;
+}
+
+.imgedit {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-img {
+    background: #0000;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-left: auto;
+    margin-top: 12px;
+}
+
+/* new product/category */
+.new-prod {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.new-prod-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 5px auto; 
+    border: 1px solid #888;
+    width: 40%; 
+}
+
+.new-prod-content h2 {
+    padding-left: 12px;
+    padding-top: 15px;
+}
+
+.new-prod-modal {
+    padding: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.new-prod-modal input[type=text], input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bg-active-2 {
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+}
+
+.new-prod-modal button {
+    padding: 10px 30px;
+    margin-top: 15px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    width: 100%;
+}
+
+.new-prod-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
