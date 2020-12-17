@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Silk Road | Carrinho</title>
+</head>
+<body>
+    <div class="container-cart">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src='./img/logo.png'/></a>
+            </div>
+            <div class="search-box">
+                <input id="search-inputText" type="text" name="" placeholder="Seja bem-vindo, o que você busca?" required="" data-invalid="" aria-invalid="true">
+                <a class="search-btn" href="#">
+                </a>
+            </div>
+            <a href="#" class="login" width="200px" height="80%">
+                <div class="img-login">
+                    <img src='./img/login.png'/>
+                </div>
+                <div class="text-login">
+                    <strong>
+                        Fazer Login <br> ou Cadastrar
+                    </strong>
+                </div>
+            </a>
+            <a href="carrinho.html" class="carrinho">
+                <div class="img-carrinho">
+                    <img src='./img/carrinho.png'/>
+                </div>
+                <div class="text-carrinho">
+                    <strong>
+                        Meu Carrinho <br> R$0,00
+                    </strong>
+                </div>
+            </a>
+            <div class="modal-bg">
+                <form class="modal-content" action="#" method="post">
+                    <div class="imgcontainer">
+                        <img src='./img/avatar.png' alt="avatar" class="avatar"/>
+                    </div>
+                    <div class="modal">
+                        <label for="uname"><b>Email</b></label>
+                        <input type="text" placeholder="Digite seu email" name="uname" required>
+                        <label for="psw"><b>Senha</b></label>
+                        <input type="password" placeholder="Digite sua senha" name="psw" required>
+                        <button class="mybtn" type="submit">Entrar</button>
+                        <span class="modal-close">X</span>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <main>
+            <div class="small-container cart-page">
+                <table class="table-cart">
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info" id="ok">
+                                <img src="./img/produto01.png"/>
+                                <div>
+                                    <p>Loratadina 10mg 12 Comprimidos</p>
+                                    <small>Valor: R$8,00</small>
+                                    <br>
+                                    <a href="">Remover</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>R$120,00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="./img/produto01.png"/>
+                                <div>
+                                    <p>Loratadina 10mg 12 Comprimidos</p>
+                                    <small>Valor: R$8,00</small>
+                                    <br>
+                                    <a href="">Remover</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>R$120,00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="./img/produto01.png"/>
+                                <div>
+                                    <p>Loratadina 10mg 12 Comprimidos</p>
+                                    <small>Valor: R$8,00</small>
+                                    <br>
+                                    <a href="">Remover</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>R$120,00</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <aside>
+            <div class="resume">
+                <h3>Resumo da Compra</h3>
+                <div class="frete">
+                    <h4>Calcular Frete</h4>
+                    <input type="text" placeholder="Insira seu CEP" aria-invalid="true">
+                    <button class="btn-frete" type="submit">OK</button>
+                </div>
+                <div class="resume-total">
+                    <table>
+                        <tr>
+                            <td>Frete: R$20,00</td>
+                            <td>Subtotal: R$49,00</td>
+                        </tr>
+                    </table>
+                    <h2>Total: R$69,00</h2>
+                    <a href="#" class="finish">Finalizar</a>
+                </div>
+            </div>
+        </aside>
+        <footer>
+            <div class="footer">
+                <div class="footer-container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Quem Somos</h3>
+                            <p>Fundada em 2020, a Silk Road é um e-commerce de medicamentos farmacêuticos
+                            que está em crescente evolução. A empresa é considerada uma dos mais influentes
+                            e-commerces do ramo. 
+                            </p>
+                        </div>
+                        <div class="footer-col-2">
+                            <h3>Métodos de Pagamento</h3>
+                            <img src="./img/metodos-pagamento.png">
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Links Úteis</h3>
+                            <ul>
+                                <li>Entar em Contato</li>
+                                <li>Fornecedores</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>Redes Sociais</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
