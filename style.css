@@ -172,9 +172,28 @@ a {
     background-color: #2980b9;
     color: white;
     border: none;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     width: 100%;
+}
+
+.modal .cadastrar {
+    position: absolute;
+    text-align: center;
+    width: 374px;
+    height: 35px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    background: #2980b9;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
 }
 
 .modal-content {
@@ -183,6 +202,7 @@ a {
     margin: 5px auto; 
     border: 1px solid #888;
     width: 30%; 
+    height: 65%;
 }
 
 .modal-close {
@@ -561,8 +581,8 @@ th:last-child {
     margin-top: 12px;
 }
 
-/* new product/category */
-.new-prod {
+/* new product/category && cadastro */
+.new-prod, .cadastro {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -577,7 +597,7 @@ th:last-child {
     transition: visibility 0s, opacity 0.5s;
 }
 
-.new-prod-content {
+.new-prod-content, .cadastro-content {
     position: relative;
     background-color: #fefefe;
     margin: 5px auto; 
@@ -585,18 +605,18 @@ th:last-child {
     width: 40%; 
 }
 
-.new-prod-content h2 {
+.new-prod-content h2, .cadastro-content h2 {
     padding-left: 12px;
     padding-top: 15px;
 }
 
-.new-prod-modal {
+.new-prod-modal, .cadastro-modal {
     padding: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 
 
-.new-prod-modal input[type=text], input[type=number], select {
+.new-prod-modal input[type=text], input[type=number], .cadastro-modal input[type=text], input[type=password], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -605,19 +625,7 @@ th:last-child {
     box-sizing: border-box;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.bg-active-2 {
-    z-index: 999;
-    visibility: visible;
-    opacity: 1;
-}
-
-.new-prod-modal button {
+.new-prod-modal button, .cadastro-modal button {
     padding: 10px 30px;
     margin-top: 15px;
     background-color: #2980b9;
@@ -628,11 +636,29 @@ input::-webkit-inner-spin-button {
     width: 100%;
 }
 
-.new-prod-close {
+.new-prod-close, .cadastro-close {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.bg-active-prod {
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+}
+
+.bg-active-cadastro {
+    z-index: 9999;
+    visibility: visible;
+    opacity: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
