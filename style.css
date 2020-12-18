@@ -75,6 +75,10 @@ a {
     font-size: 15px;
 }
 
+.barra-lateral img {
+    
+}
+
 .barra-lateral .titulo {
     width: 230px;
     height: 50px;
@@ -583,7 +587,7 @@ th:last-child {
 }
 
 /* new product/category && cadastro */
-.new-prod, .new-category, .cadastro {
+.new-prod, .edit-prod, .new-category, .edit-category, .cadastro {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -598,7 +602,7 @@ th:last-child {
     transition: visibility 0s, opacity 0.5s;
 }
 
-.new-prod-content, .new-category-content, .cadastro-content {
+.new-prod-content, .edit-prod-content, .new-category-content, .edit-category-content, .cadastro-content {
     position: relative;
     background-color: #fefefe;
     margin: 5px auto; 
@@ -606,19 +610,21 @@ th:last-child {
     width: 40%; 
 }
 
-.new-prod-content h2, .new-category-content h2, .cadastro-content h2 {
+.new-prod-content h2, .edit-prod-content h2, .new-category-content h2, .edit-category-content h2, .cadastro-content h2 {
     padding-left: 12px;
     padding-top: 15px;
 }
 
-.new-prod-modal, .new-category-modal, .cadastro-modal {
+.new-prod-modal, .edit-prod-modal, .new-category-modal, .edit-category-modal, .cadastro-modal {
     padding: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 
 
-.new-prod-modal input[type=text], input[type=number], .cadastro-modal input[type=text], input[type=password], 
-.new-category-modal input[type=text], select {
+.new-prod-modal input[type=text], .new-prod-modal input[type=number], 
+.cadastro-modal input[type=text], .cadastro-modal input[type=password], 
+.new-category-modal input[type=text], .edit-category-modal input[type=text], 
+.edit-prod-modal input[type=text], .edit-prod-modal input[type=number], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -627,7 +633,8 @@ th:last-child {
     box-sizing: border-box;
 }
 
-.new-prod-modal button, .new-category-modal button, .cadastro-modal button {
+.new-prod-modal button, .edit-prod-modal button, .new-category-modal button, .edit-category-modal button, 
+.cadastro-modal button {
     padding: 10px 30px;
     margin-top: 15px;
     background-color: #2980b9;
@@ -638,7 +645,7 @@ th:last-child {
     width: 100%;
 }
 
-.new-prod-close, .new-category-close, .cadastro-close {
+.new-prod-close, .edit-prod-close, .new-category-close, .edit-category-close, .cadastro-close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -648,6 +655,12 @@ th:last-child {
 }
 
 .bg-active-prod {
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+}
+
+.bg-active-edit-prod {
     z-index: 999;
     visibility: visible;
     opacity: 1;
@@ -665,8 +678,15 @@ th:last-child {
     opacity: 1;
 }
 
+.bg-active-edit-category {
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+}
+
 /* só em alguns lugares */
-.new-prod-modal input::-webkit-outer-spin-button, .new-prod-modal input::-webkit-inner-spin-button {
+.new-prod-modal input::-webkit-outer-spin-button, .new-prod-modal input::-webkit-inner-spin-button,
+.edit-prod-modal input::-webkit-outer-spin-button, .edit-prod-modal input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }

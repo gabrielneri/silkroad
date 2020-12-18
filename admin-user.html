@@ -66,10 +66,38 @@
                     </div>
                 </form>
             </div>
+            <div class="edit-prod">
+                <form class="edit-prod-content" id="edit-prod-form" action="#" method="post">
+                    <h2>Produto</h2>
+                    <div class="edit-prod-modal">
+                        <label for="name"><b>Nome</b></label>
+                        <input type="text" placeholder="Digite o nome" name="name" required>
+                        <label for="categoria"><b>Categoria</b></label>
+                        <select id="categoria" form="prod-form">
+                            <option value="pressaoalta">Pressao Alta</option>
+                            <option value="dorc">Dor de Cabeça</option>
+                            <option value="Diabetes">Diabetes</option>
+                            <option value="dorp">Dores no Corpo</option>
+                          </select>
+                        <label for="preco"><b>Preço</b></label>
+                        <input type="number" placeholder="Digite o preço" name="preco" required>
+                        <label for="estoque"><b>Estoque</b></label>
+                        <input type="number" placeholder="Digite o estoque" name="estoque" required>
+                        <label for="disponivel"><b>Disponível:</b></label>
+                        <input type="radio" id="yes" name="disponivel">
+                        <label for="yes">Sim</label>
+                        <input type="radio" id="no" name="disponivel">
+                        <label for="no">Não</label>
+                        <button class="mybtn" type="submit">Confirmar</button>
+                        <button class="mybtn" type="button">Remover</button>
+                        <span class="edit-prod-close">X</span>
+                    </div>
+                </form>
+            </div>
         </header>
         <!-- Main -->
         <main>
-            <div class="product">
+            <div class="product" id="prod">
                 <div class="p-box">
                     <a href="produto.html">
                         <img src="./img/produto01.png" alt=""/>
@@ -122,7 +150,7 @@
         </main>
         <!-- Barra Lateral -->
         <aside>
-            <div class="barra-lateral">
+            <div class="barra-lateral" id="barra">
                 <div class="titulo">
                     <span><img src='./img/abc.png'/><h1 style='display:inline;'>Medicamentos</h1></span>    
                 </div>
@@ -130,19 +158,19 @@
                     <li>
                         <a href="#">PRESSÃO ALTA</a>
                     </li>
-                    <a href="#" class="btn-img"><img src="./img/edit.png" class="imgedit"></a>
+                    <a href="#" class="btn-img" id="01"><img src="./img/edit.png" class="imgedit"></a>
                     <li>
                         <a href="#">DOR DE CABEÇA</a>
                     </li>
-                    <a href="#" class="btn-img"><img src="./img/edit.png" class="imgedit"></a>
+                    <a href="#" class="btn-img" id="02"><img src="./img/edit.png" class="imgedit"></a>
                     <li>
                         <a href="#">DORES NO CORPO</a>
                     </li>
-                    <a href="#" class="btn-img"><img src="./img/edit.png" class="imgedit"></a>
+                    <a href="#" class="btn-img" id="03"><img src="./img/edit.png" class="imgedit"></a>
                     <li>
                         <a href="#">DIABETES</a>
                     </li>
-                    <a href="#" class="btn-img"><img src="./img/edit.png" class="imgedit"></a>
+                    <a href="#" class="btn-img" id="04"><img src="./img/edit.png" class="imgedit"></a>
                     <li class="addcategoria">
                         <a href="#" class="register-category">CADASTRAR CATEGORIA</a>
                     </li>
@@ -156,6 +184,18 @@
                         <input type="text" placeholder="Digite o nome" name="name" required>
                         <button class="mybtn" type="submit">Criar</button>
                         <span class="new-category-close">X</span>
+                    </div>
+                </form>
+            </div>
+            <div class="edit-category">
+                <form class="edit-category-content" id="edit-form" action="#" method="post">
+                    <h2>Categoria</h2>
+                    <div class="edit-category-modal">
+                        <label for="name"><b>Nome</b></label>
+                        <input type="text" placeholder="Digite o nome" name="name" required>
+                        <button class="mybtn" type="submit">Confirmar</button>
+                        <button class="mybtn" type="button">Remover</button>
+                        <span class="edit-category-close">X</span>
                     </div>
                 </form>
             </div>
