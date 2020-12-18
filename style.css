@@ -426,6 +426,7 @@ input:focus {
 .cart-info {
     display: flex;
     flex-wrap: wrap;
+    font-size: 15px;
 }
 
 .cart-page table {
@@ -446,14 +447,14 @@ input:focus {
 }
 
 .cart-page td input {
-    width: 30px;
-    height: 20px;
+    width: 35px;
+    height: 25px;
     padding: 5px;
 }
 
 .cart-page td a {
     color: #006400;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .cart-page td img {
@@ -536,7 +537,7 @@ th:last-child {
 
 .img-cadastro {
     float: left;
-    padding-left: 15px;
+    padding-left: 25px;
     padding-top: 45px;
 }
 
@@ -547,7 +548,7 @@ th:last-child {
 
 .text-cadastro {
     float: left;
-    font-size: 17px;
+    font-size: 20px;
     padding-left: 10px;
     padding-top: 55px;
     color: #006400;
@@ -582,7 +583,7 @@ th:last-child {
 }
 
 /* new product/category && cadastro */
-.new-prod, .cadastro {
+.new-prod, .new-category, .cadastro {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -597,7 +598,7 @@ th:last-child {
     transition: visibility 0s, opacity 0.5s;
 }
 
-.new-prod-content, .cadastro-content {
+.new-prod-content, .new-category-content, .cadastro-content {
     position: relative;
     background-color: #fefefe;
     margin: 5px auto; 
@@ -605,18 +606,19 @@ th:last-child {
     width: 40%; 
 }
 
-.new-prod-content h2, .cadastro-content h2 {
+.new-prod-content h2, .new-category-content h2, .cadastro-content h2 {
     padding-left: 12px;
     padding-top: 15px;
 }
 
-.new-prod-modal, .cadastro-modal {
+.new-prod-modal, .new-category-modal, .cadastro-modal {
     padding: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 
 
-.new-prod-modal input[type=text], input[type=number], .cadastro-modal input[type=text], input[type=password], select {
+.new-prod-modal input[type=text], input[type=number], .cadastro-modal input[type=text], input[type=password], 
+.new-category-modal input[type=text], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -625,7 +627,7 @@ th:last-child {
     box-sizing: border-box;
 }
 
-.new-prod-modal button, .cadastro-modal button {
+.new-prod-modal button, .new-category-modal button, .cadastro-modal button {
     padding: 10px 30px;
     margin-top: 15px;
     background-color: #2980b9;
@@ -636,7 +638,7 @@ th:last-child {
     width: 100%;
 }
 
-.new-prod-close, .cadastro-close {
+.new-prod-close, .new-category-close, .cadastro-close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -657,8 +659,19 @@ th:last-child {
     opacity: 1;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.bg-active-category {
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* só em alguns lugares */
+.new-prod-modal input::-webkit-outer-spin-button, .new-prod-modal input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.addcategoria a {
+    color: #000000; 
+    font-size: 15px;
 }
