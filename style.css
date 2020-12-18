@@ -75,10 +75,6 @@ a {
     font-size: 15px;
 }
 
-.barra-lateral img {
-    
-}
-
 .barra-lateral .titulo {
     width: 230px;
     height: 50px;
@@ -146,7 +142,7 @@ a {
 /* Header - end */
 
 /* Tela Login - start */
-.modal-bg {
+.login-bg {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -156,22 +152,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s;
 }
 
-.bg-active {
-    z-index: 999;
-    visibility: visible;
-    opacity: 1;
-}
-
-.modal {
+.login-m {
     padding: 16px;
 }
 
-.modal button {
+.login-m button {
     padding: 10px 30px;
     background-color: #2980b9;
     color: white;
@@ -182,10 +169,10 @@ a {
     width: 100%;
 }
 
-.modal .cadastrar {
+.login-m .cadastrar {
     position: absolute;
     text-align: center;
-    width: 374px;
+    width: 92%;
     height: 35px;
     border: none;
     font-size: 15px;
@@ -200,7 +187,7 @@ a {
     transform: translateX(-50%);
 }
 
-.modal-content {
+.login-content {
     position: relative;
     background-color: #fefefe;
     margin: 5px auto; 
@@ -209,16 +196,7 @@ a {
     height: 65%;
 }
 
-.modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.modal input[type=text], input[type=password] {
+.login-m input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
