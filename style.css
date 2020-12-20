@@ -142,79 +142,7 @@ a {
 /* Header - end */
 
 /* Tela Login - start */
-.login-bg {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.login-m {
-    padding: 16px;
-}
-
-.login-m button {
-    padding: 10px 30px;
-    background-color: #2980b9;
-    color: white;
-    border: none;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    width: 100%;
-}
-
-.login-m .cadastrar {
-    position: absolute;
-    text-align: center;
-    width: 92%;
-    height: 35px;
-    border: none;
-    font-size: 15px;
-    color: white;
-    background: #2980b9;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 50%;
-    bottom: 25px;
-    transform: translateX(-50%);
-}
-
-.login-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: 5px auto; 
-    border: 1px solid #888;
-    width: 30%; 
-    height: 65%;
-}
-
-.login-m input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-  
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
-
-img.avatar {
-    width: 30%;
-    border-radius: 50%;
-}
 /* Tela Login - end */
 
 
@@ -564,8 +492,8 @@ th:last-child {
     margin-top: 12px;
 }
 
-/* new product/category && cadastro */
-.new-prod, .edit-prod, .new-category, .edit-category, .cadastro {
+/* new product/category */
+.new-prod, .edit-prod, .new-category, .edit-category {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -580,7 +508,7 @@ th:last-child {
     transition: visibility 0s, opacity 0.5s;
 }
 
-.new-prod-content, .edit-prod-content, .new-category-content, .edit-category-content, .cadastro-content {
+.new-prod-content, .edit-prod-content, .new-category-content, .edit-category-content {
     position: relative;
     background-color: #fefefe;
     margin: 5px auto; 
@@ -588,19 +516,18 @@ th:last-child {
     width: 40%; 
 }
 
-.new-prod-content h2, .edit-prod-content h2, .new-category-content h2, .edit-category-content h2, .cadastro-content h2 {
+.new-prod-content h2, .edit-prod-content h2, .new-category-content h2, .edit-category-content h2 {
     padding-left: 12px;
     padding-top: 15px;
 }
 
-.new-prod-modal, .edit-prod-modal, .new-category-modal, .edit-category-modal, .cadastro-modal {
+.new-prod-modal, .edit-prod-modal, .new-category-modal, .edit-category-modal {
     padding: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 
 
 .new-prod-modal input[type=text], .new-prod-modal input[type=number], 
-.cadastro-modal input[type=text], .cadastro-modal input[type=password], 
 .new-category-modal input[type=text], .edit-category-modal input[type=text], 
 .edit-prod-modal input[type=text], .edit-prod-modal input[type=number], select {
     width: 100%;
@@ -611,8 +538,7 @@ th:last-child {
     box-sizing: border-box;
 }
 
-.new-prod-modal button, .edit-prod-modal button, .new-category-modal button, .edit-category-modal button, 
-.cadastro-modal button {
+.new-prod-modal button, .edit-prod-modal button, .new-category-modal button, .edit-category-modal button {
     padding: 10px 30px;
     margin-top: 15px;
     background-color: #2980b9;
@@ -623,7 +549,7 @@ th:last-child {
     width: 100%;
 }
 
-.new-prod-close, .edit-prod-close, .new-category-close, .edit-category-close, .cadastro-close {
+.new-prod-close, .edit-prod-close, .new-category-close, .edit-category-close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -640,12 +566,6 @@ th:last-child {
 
 .bg-active-edit-prod {
     z-index: 999;
-    visibility: visible;
-    opacity: 1;
-}
-
-.bg-active-cadastro {
-    z-index: 9999;
     visibility: visible;
     opacity: 1;
 }
