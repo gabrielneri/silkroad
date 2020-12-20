@@ -112,13 +112,19 @@ a {
     text-indent: 10px;
 }
 
-.img-login {
+.img-login, .img-pedidos {
     float: left;
     padding-left: 15px;
     padding-top: 45px;
 }
 
-.text-login {
+.img-home {
+    float: left;
+    padding-left: 55px;
+    padding-top: 45px;
+}
+
+.text-login, .text-pedidos {
     float: left;
     font-size: 20px;
     padding-left: 10px;
@@ -126,9 +132,23 @@ a {
     color: #006400;
 }
 
-.img-carrinho {
+.text-home {
+    float: left;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 65px;
+    color: #006400;
+}
+
+.img-carrinho-f {
     float: left;
     padding-left: 15px;
+    padding-top: 45px;
+}
+
+.img-carrinho {
+    float: left;
+    padding-left: 35px;
     padding-top: 45px;
 }
 
@@ -136,14 +156,10 @@ a {
     float: left;
     font-size: 20px;
     padding-left: 10px;
-    padding-top: 55px;
+    padding-top: 65px;
     color: #006400;
 }
 /* Header - end */
-
-/* Tela Login - start */
-
-/* Tela Login - end */
 
 
 .p-box {
@@ -329,7 +345,7 @@ input:focus {
     grid-template-areas: "header header" "main aside" "footer footer";
 }
 
-.cart-page {
+.cart-page, .pedidos-page {
     margin: 20px auto;
 }
 
@@ -339,12 +355,12 @@ input:focus {
     font-size: 15px;
 }
 
-.cart-page table {
+.cart-page table, .pedidos-page table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.cart-page th {
+.cart-page th, .pedidos-page th {
     text-align: left;
     padding: 5px;
     color: #fff;
@@ -352,7 +368,7 @@ input:focus {
     font-weight: normal;
 }
 
-.cart-page td {
+.cart-page td, .pedidos-page th {
     padding: 10px 5px;
 }
 
@@ -592,4 +608,12 @@ th:last-child {
 .addcategoria a {
     color: #000000; 
     font-size: 15px;
+}
+
+.container-pedidos {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 90vh 35vh;
+    grid-gap: 10px;
+    grid-template-areas: "header header" "main main" "footer footer";
 }

@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Silk Road | Farmácia</title>
+    <title>Silk Road | Fármacia</title>
 </head>
 <body>
-    <div class="container-product">
+    <div class="container">
+        <!-- Header -->
         <header>
             <div class="logo">
-                <a href="index.html"><img src='./img/logo.png'/></a>
+                <a href="cliente.html"><img src='./img/logo.png'/></a>
             </div>
             <div class="search-box">
                 <input id="search-inputText" type="text" name="" placeholder="Seja bem-vindo, o que você busca?" required="" data-invalid="" aria-invalid="true">
                 <a class="search-btn" href="#">
                 </a>
             </div>
-            <a href="cliente.html" class="home" width="200px" height="80%">
-                <div class="img-home">
-                    <img src='./img/home.png'/>
+            <a href="pedidos.html" class="pedidos">
+                <div class="img-pedidos">
+                    <img src='./img/pedidos.png'/>
                 </div>
-                <div class="text-home">
+                <div class="text-pedidos">
                     <strong>
-                        Início
+                        Meus Pedidos
                     </strong>
                 </div>
             </a>
@@ -39,23 +40,56 @@
                 </div>
             </a>
         </header>
-        <!-- Detalhes Produto -->
+        <!-- Main -->
         <main>
-            <div class="single-product">
-                <div class="row">
-                    <div class="col-1">
-                        <img src="./img/produto01g.png">
-                    </div>
-                    <div class="col-2">
-                        <p>Início / Pressão Alta</p>
-                        <h1>Loratadina 10mg 12 Comprimidos</h1>
-                        <h4>R$50,00</h4>
-                        <input type="number" value="1">
-                        <a href="" class="buy-btn-product">Adicionar ao Carrinho</a>
-                        <h3>Informações do Produto</h3>
-                        <p>Princípio ativo: Dipirona sódica, Butilbrometo de escopolamina<br>
-                        Nome do Fabricante: BOEHERINGNGER OL.</p>
-                    </div>
+            <div class="product">
+                <div class="p-box">
+                    <a href="produto.html">
+                        <img src="./img/produto01.png" alt=""/>
+                        <p>Loratadina 10mg 12 Comprimidos</p>
+                    </a>
+                    <a href="#" class="price">R$ 30,00</a>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
+                </div>
+                <div class="p-box">
+                    <a href="produto.html">
+                        <img src="./img/produto01.png" alt=""/>
+                        <p>Loratadina 10mg 12 Comprimidos</p>
+                    </a>
+                    <a href="#" class="price">R$ 30,00</a>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
+                </div>
+                <div class="p-box">
+                    <a href="produto.html">
+                        <img src="./img/produto01.png" alt=""/>
+                        <p>Loratadina 10mg 12 Comprimidos</p>
+                    </a>
+                    <a href="#" class="price">R$ 30,00</a>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
+                </div>
+                <div class="p-box">
+                    <a href="produto.html">
+                        <img src="./img/produto01.png" alt=""/>
+                        <p>Loratadina 10mg 12 Comprimidos</p>
+                    </a>
+                    <a href="#" class="price">R$ 30,00</a>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
+                </div>
+                <div class="p-box">
+                    <a href="produto.html">
+                        <img src="./img/produto01.png" alt=""/>
+                        <p>Loratadina 10mg 12 Comprimidos</p>
+                    </a>
+                    <a href="#" class="price">R$ 30,00</a>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
+                </div>
+                <div class="p-box">
+                    <a href="produto.html">
+                        <img src="./img/produto01.png" alt=""/>
+                        <p>Loratadina 10mg 12 Comprimidos</p>
+                    </a>
+                    <a href="#" class="price">R$ 30,00</a>
+                    <a href="#" class="buy-btn">Adicionar ao Carrinho</a>
                 </div>
             </div>
         </main>
@@ -81,8 +115,9 @@
                 </ul>    
             </div>
         </aside>
+        <!-- Footer -->
         <footer>
-            <div class="footer">
+            <div class="footer" id="f">
                 <div class="footer-container">
                     <div class="row">
                         <div class="footer-col-1">
@@ -115,5 +150,8 @@
                 </div>
             </div>
         </footer>
+
+        <script src="app.js"></script>
     </div>
 </body>
+</html>

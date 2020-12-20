@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Silk Road | Farmácia</title>
+    <title>Silk Road | Meus Pedidos</title>
 </head>
 <body>
-    <div class="container-product">
+    <div class="container-pedidos">
         <header>
             <div class="logo">
                 <a href="index.html"><img src='./img/logo.png'/></a>
@@ -39,48 +39,22 @@
                 </div>
             </a>
         </header>
-        <!-- Detalhes Produto -->
         <main>
-            <div class="single-product">
-                <div class="row">
-                    <div class="col-1">
-                        <img src="./img/produto01g.png">
-                    </div>
-                    <div class="col-2">
-                        <p>Início / Pressão Alta</p>
-                        <h1>Loratadina 10mg 12 Comprimidos</h1>
-                        <h4>R$50,00</h4>
-                        <input type="number" value="1">
-                        <a href="" class="buy-btn-product">Adicionar ao Carrinho</a>
-                        <h3>Informações do Produto</h3>
-                        <p>Princípio ativo: Dipirona sódica, Butilbrometo de escopolamina<br>
-                        Nome do Fabricante: BOEHERINGNGER OL.</p>
-                    </div>
-                </div>
+            <div class="pedidos-page">
+                <table class="table-pedidos">
+                    <tr>
+                        <th>ID Pedido</th>
+                        <th>Data</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td><p>Compra 03</p></td>
+                        <td><p>27/06/2020</p></td>
+                        <td><p>R$120,00</p></td>
+                    </tr>
+                </table>
             </div>
         </main>
-        <!-- Barra Lateral -->
-        <aside>
-            <div class="barra-lateral">
-                <div class="titulo">
-                    <span><img src='./img/abc.png'/><h1 style='display:inline;'>Medicamentos</h1></span>    
-                </div>
-                <ul>
-                    <li>
-                        <a href="#">PRESSÃO ALTA</a>
-                    </li>
-                    <li>
-                        <a href="#">DOR DE CABEÇA</a>
-                    </li>
-                    <li>
-                        <a href="#">DORES NO CORPO</a>
-                    </li>
-                    <li>
-                        <a href="#">DIABETES</a>
-                    </li>
-                </ul>    
-            </div>
-        </aside>
         <footer>
             <div class="footer">
                 <div class="footer-container">
@@ -116,4 +90,6 @@
             </div>
         </footer>
     </div>
+    <script src="carrinho.js"></script>
 </body>
+</html>
