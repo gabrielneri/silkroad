@@ -26,9 +26,6 @@ for(let i = 0; i < remover.length; i++) {
     });
 }
 
-function getTotal() {
-
-}
 /*
 function sendForm() {
     let form = document.createElement("form");
