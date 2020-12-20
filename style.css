@@ -405,17 +405,17 @@ input:focus {
     font-size: 20px;
 }
 
-.frete input {
+.endereco input {
     padding: 5px 12px;
     margin: 8px 0;
     width: 190px;
 }
 
-.frete h4 {
+.endereco h4 {
     margin: 0;
 }
 
-.frete button {
+.endereco button {
     padding-right: 30px;
     height: 28px;
     background-color: #006400;
@@ -424,13 +424,6 @@ input:focus {
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     width: 15%;
-}
-
-.resume-total td {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 15px;
-    justify-content: left;
 }
 
 .finish {
