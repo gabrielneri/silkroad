@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Silk Road | Fármacia</title>
+    <title>Silk Road | Novo Produto</title>
 </head>
 <body>
     <div class="container">
@@ -19,7 +19,7 @@
                 <a class="search-btn" href="#">
                 </a>
             </div>
-            <a href="novo-produto.html" class="cadastro-prod">
+            <a href="novo-produto.html"class="cadastro-prod">
                 <div class="img-cadastro">
                     <img src='./img/add.png'/>
                 </div>
@@ -42,55 +42,31 @@
         </header>
         <!-- Main -->
         <main>
-            <div class="product" id="prod">
-                <div class="p-box">
-                    <a href="produto.html">
-                        <img src="./img/produto01.png" alt=""/>
-                        <p>Loratadina 10mg 12 Comprimidos</p>
-                    </a>
-                    <a href="#" class="price">R$ 30,00</a>
-                    <a href="edit-produto.html" class="edit-btn">Editar Produto</a>
-                </div>
-                <div class="p-box">
-                    <a href="produto.html">
-                        <img src="./img/produto01.png" alt=""/>
-                        <p>Loratadina 10mg 12 Comprimidos</p>
-                    </a>
-                    <a href="#" class="price">R$ 30,00</a>
-                    <a href="edit-produto.html" class="edit-btn">Editar Produto</a>
-                </div>
-                <div class="p-box">
-                    <a href="produto.html">
-                        <img src="./img/produto01.png" alt=""/>
-                        <p>Loratadina 10mg 12 Comprimidos</p>
-                    </a>
-                    <a href="#" class="price">R$ 30,00</a>
-                    <a href="edit-produto.html" class="edit-btn">Editar Produto</a>
-                </div>
-                <div class="p-box">
-                    <a href="produto.html">
-                        <img src="./img/produto01.png" alt=""/>
-                        <p>Loratadina 10mg 12 Comprimidos</p>
-                    </a>
-                    <a href="#" class="price">R$ 30,00</a>
-                    <a href="edit-produto.html" class="edit-btn">Editar Produto</a>
-                </div>
-                <div class="p-box">
-                    <a href="produto.html">
-                        <img src="./img/produto01.png" alt=""/>
-                        <p>Loratadina 10mg 12 Comprimidos</p>
-                    </a>
-                    <a href="#" class="price">R$ 30,00</a>
-                    <a href="edit-produto.html" class="edit-btn">Editar Produto</a>
-                </div>
-                <div class="p-box">
-                    <a href="produto.html">
-                        <img src="./img/produto01.png" alt=""/>
-                        <p>Loratadina 10mg 12 Comprimidos</p>
-                    </a>
-                    <a href="#" class="price">R$ 30,00</a>
-                    <a href="edit-produto.html" class="edit-btn">Editar Produto</a>
-                </div>
+            <div class="new-prod">
+                <form class="new-prod-content" name="prod-form "id="prod-form" action="#" method="post">
+                    <h2>Novo Produto</h2>
+                    <div class="new-prod-modal">
+                        <label for="name"><b>Nome</b></label>
+                        <input type="text" placeholder="Digite o nome" name="name" id="name" required>
+                        <label for="categoria"><b>Categoria</b></label>
+                        <select id="categoria" form="prod-form">
+                            <option value="pressaoalta">Pressao Alta</option>
+                            <option value="dorc">Dor de Cabeça</option>
+                            <option value="Diabetes">Diabetes</option>
+                            <option value="dorp">Dores no Corpo</option>
+                          </select>
+                        <label for="preco"><b>Preço</b></label>
+                        <input type="number" placeholder="Digite o preço" name="preco" id="preco" required>
+                        <label for="estoque"><b>Estoque</b></label>
+                        <input type="number" placeholder="Digite o estoque" name="estoque" id="estoque" required>
+                        <label for="disponivel"><b>Disponível:</b></label>
+                        <input type="radio" id="yes" name="disponivel">
+                        <label for="yes">Sim</label>
+                        <input type="radio" id="no" name="disponivel">
+                        <label for="no">Não</label>
+                        <button class="mybtn" type="submit">Criar</button>
+                    </div>
+                </form>
             </div>
         </main>
         <!-- Barra Lateral -->
